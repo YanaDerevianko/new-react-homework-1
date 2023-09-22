@@ -1,0 +1,10 @@
+.component-wrapper-4 {
+    background-color: #cbd0bb;
+}
+li.user-name-item {
+    border: none;
+    width: 100px;
+}
+li.user-name-item p {
+    text-align: left;
+}

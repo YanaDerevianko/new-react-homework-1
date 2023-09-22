@@ -1,0 +1,39 @@
+.component-wrapper-2 {
+    background-color: #e7eba6f0;
+}
+.title {
+    font-size: 22px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 75px;
+    justify-content: space-between;
+    width: 1090px;
+    height: auto;
+    margin: auto; 
+    margin-bottom: 20px;  
+    padding: 0;
+}
+li {
+    width: 350px;
+    height: auto;
+    border: 1px solid #000000;
+    border-radius: 11px;
+}
+.product-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+}
+.product-price {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+.product-description {
+    font-size: 16px;
+    padding: 15px;
+    margin: 0;
+}
