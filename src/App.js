@@ -3,15 +3,14 @@ import { WelcomeMessage } from "../src/components/WelcomeMessage/WelcomeMessage"
 import { ProductInfo } from "../src/components/ProductInfo/ProductInfo";
 import { MovieDirectorList } from "../src/components/MovieDirectorList/MovieDirectorList";
 import { UserList } from "../src/components/UserList/UserList";
-import {UserProfile} from "../src/components/UserProfile/UserProfile";
+import { UserProfile } from "../src/components/UserProfile/UserProfile";
 import products from "../src/data/products.json";
 import event from "../src/data/event.json";
 import { users } from "../src/data/usersNames.js";
-import {EventMessage} from "../src/components/EventMessage/EventMessage";
+import { EventMessage } from "../src/components/EventMessage/EventMessage";
 import book from "../src/data/book.json";
-import {BookInfo} from "../src/components/BookInfo/BookInfo";
-
-
+import { BookInfo } from "../src/components/BookInfo/BookInfo";
+import { CurrencyConverter } from "../src/components/CurrencyConverter/CurrencyConverter";
 
 const profile = {
   name: "Olga",
@@ -38,8 +37,13 @@ function App() {
       <MovieDirectorList />
       <UserList userNames={users} />
       <UserProfile profile={profile} />
-      <EventMessage descr ={event.description} date={event.date} />
-      <BookInfo name={book.title} author={book.author} year={book.publicationYear} />
+      <EventMessage descr={event.description} date={event.date} />
+      <BookInfo
+        name={book.title}
+        author={book.author}
+        year={book.publicationYear}
+      />
+      <CurrencyConverter amount={500} exchangeRate={40} />
     </div>
   );
 }
