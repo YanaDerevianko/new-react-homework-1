@@ -12,21 +12,47 @@ import book from "../src/data/book.json";
 import { BookInfo } from "../src/components/BookInfo/BookInfo";
 import { CurrencyConverter } from "../src/components/CurrencyConverter/CurrencyConverter";
 
-const profile = {
-  name: "Olga",
-  age: 25,
-  city: "Vinnytsia",
+// const profile = {
+//   name: "Olga",
+//   age: 25,
+//   city: "Vinnytsia",
+// };
+
+const ButtonContainer = (props) => {
+  const {color, children} = props
+
+  const boxStyle ={
+    backgroundColor: color,
+    borderRadius: "5px",
+    padding: "10px"
+  }
+   return (
+    <div style={boxStyle}>
+      {children}
+    </div>
+   )
+
+
 };
 
 function App() {
   return (
     <div className="App">
-      <h1 className="header">REACT HOMEWORK 1</h1>
+      <ButtonContainer color={'#000000'}>
+        <button>click me!</button>
+      </ButtonContainer>
+
+      <ButtonContainer color={'#fafa'}>
+        <button>click 2</button>
+      </ButtonContainer>
+
+
+      {/* <h1 className="header">REACT HOMEWORK 1</h1>
       <WelcomeMessage userName="Yana" />
 
       {/* <ProductInfo /> */}
 
-      <h2 className="component-name">Component 'ProductInfo'</h2>
+      {/* <h2 className="component-name">Component 'ProductInfo'</h2>
       <ul>
         {products.map((product) => (
           <li key={product.id}>
@@ -43,7 +69,7 @@ function App() {
         author={book.author}
         year={book.publicationYear}
       />
-      <CurrencyConverter amount={500} exchangeRate={40} />
+      <CurrencyConverter amount={500} exchangeRate={40} />  */}
     </div>
   );
 }
